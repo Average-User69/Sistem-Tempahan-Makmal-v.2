@@ -1,0 +1,355 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #5CD895;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    Font
+*/
+/*Custom Font*/
+@font-face{/*Rodina font*/
+    font-family: Rodina;
+    src: url(font/Rodina/Rodina-Regular.otf);
+}
+
+@font-face{/*Raleway font*/
+    font-family: Raleway;
+    src: url(font/Raleway/Raleway-Light.ttf);
+}
+
+/*
+    Scroll settings
+*/
+/*Carter for google user*/
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/*
+    Font Settings
+*/
+.displayItem h1,p{
+    font-family: Raleway;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    Navigation
+*/
+#bugerButton{
+    margin-top: 15vh;  
+    height: 10vh;
+    width: 6vw;
+    margin-left: 90vw;
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5%;
+    transition:all 0.25s;    
+    background-color: #5CD895;
+    border: #EDF5E1 2px solid;
+    z-index: 11;
+}
+
+#bugerButton:hover {
+    background-color: #05386B;
+    transform: scale(1.1);
+}
+
+#focusCover{
+    height: 110vh;
+    width: 80vw;
+    padding: 0;
+    margin-right: 20vw;
+    margin-top: 0vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    display: block; /*CHANGE DISPLAY TO BLOCK WHEN OPENING MENU*/
+    z-index: 10;
+}
+
+#rNavBar{
+    height: 110vh;
+    margin-top: 0vh;
+    width: 30vw;
+    margin-left: 70vw;
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #05386B;
+    justify-content: center;
+    z-index: 10;
+}
+
+#navItem1{
+    transition: all 0.25s ease;
+    background-color: #05386B;
+}
+
+#navItem1:hover{
+    transition: all 0.25s ease;
+    background-color: #5CD895;
+}
+
+#navItem2{
+    transition: all 0.25s ease;
+    background-color: #05386B;
+}
+
+#navItem2:hover{
+    transition: all 0.25s ease;
+    background-color: #5CD895;
+}
+
+#navItem3{
+    transition: all 0.25s ease;
+    background-color: #05386B;
+}
+
+#navItem3:hover{
+    transition: all 0.25s ease;
+    background-color: #5CD895;
+}
+
+/*Hypertext properties*/
+#rNavBar a{
+    color: black;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#rNavBar a:link{
+    color: black;
+    text-decoration: none;
+}
+
+#rNavBar a:focus{
+    color: black;
+    text-decoration: none;
+}
+
+#rNavBar a:visited{
+    color: black;
+    text-decoration: none;
+}
+/*Navigation bar items*/
+.navItem{
+    text-align: center;
+    width: 100%;
+    height: 34%;
+    background-color: rgba(0, 0, 0, 0);
+    border: #EDF5E1 1px solid;
+    cursor: pointer;
+}
+
+.navText{
+    margin-top: 25%;
+}
+
+.navItem p{
+    color: #EDF5E1;
+}
+
+/*
+    Html(Main Structure)
+*/
+#htmlHeader{
+        width: 100vw;
+        height: 150vh;
+        display: block;
+        position: static;
+        background-image: -moz-linear-gradient(180deg, rgba(5,56,107,1), rgba(5,56,107,0.9),rgba(5,56,107,0.80),rgba(5,56,107,0));
+        background-image: linear-gradient(180deg, rgba(5,56,107,1), rgba(5,56,107,0.9),rgba(5,56,107,0.80),rgba(5,56,107,0));
+        margin-top: -25vh;
+}
+
+#htmlHeaderText{
+    transform: translateY(50vh);
+    font-family: Rodina;
+    text-align: center;
+    font-size: 800%;
+    display: block;
+    word-wrap: break-word;
+    z-index: 0;
+}
+/*Html Footer*/
+
+#htmlFooter{
+    width: 100vw;
+    height: 50vh;
+    background-color: #05386B;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#htmlFooterCopyright{
+    height: 100%;
+    width: 80%;
+    background-color: inherit;
+    order: 1;
+    background-color: #05386B;
+}
+
+#htmlFooterMedia{
+    height: 100%;
+    width: 20%;
+    background-color: inherit;
+    order: 2;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*htmlFoterMedia Children*/
+.socialMedia{
+    background-image: url();
+    display: block;
+    height: 30%;
+    width: 100%;
+    margin-top: 2.5%;
+    background-color: #05386B;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.socialMedia:hover{
+    transform: scale(0.9);
+    transition: all 0.25s ease;
+}
+
+/*
+    Content Items
+*/
+#contentWrapper{
+    height: 100vh;
+    width: 80vw;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contentItem{
+    height: 80%; /*change every cotent element here*/
+    width: 100%;
+    padding: 0;
+    border: 1px #EDF5E1 solid;
+    background-color: #05386B;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*
+#titleTextHeader,#titleTextBody,#titleTextFooter{
+    cursor: pointer;
+}
+*/
+
+/*
+    Display Items
+*/
+.displayItem{
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.displayItem:nth-child(1){
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Display Items Child*/
+.displayItem>.text{     
+    width: 100%;
+    margin: 0;    
+    text-align: left;
+}
+
+.displayItem>.text:nth-child(1){     
+    height: 30%;
+}
+
+.displayItem>.text:nth-child(2){     
+    height: 70%;
+    background-color: #EDF5E1;
+}
+
+/*
+    Content Image
+*/
+.text>div{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.imageRow{
+    width: 100%;
+    background-color: inherit;
+    display: row nowrap;
+}
+
+.imageRow:nth-child(1){/*Image Row1*/
+    height: 50%;
+}   
+
+.imageRow:nth-child(2){/*Image Row2*/
+    height: 50%;
+}
+
+.image{
+    height: 80%;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2.5%;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    border: black 2px solid;
+}
+
+/*
+    Gallery Focus
+*/
+#galleryFocus{
+    display: none;
+    margin-top: 12.5vh;
+    height: 110vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+#imageFocus{
+    display: inherit;
+    position: fixed;
+    height: 60%;
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: 10%;
+    margin-top: 15%;
+    background-color: #EDF5E1;
+}
+
+
+/*
+    Contet Image settings
+*/
+.imageRow>div{
+    background-image: url("imgFolder/idola.jpg");
+}

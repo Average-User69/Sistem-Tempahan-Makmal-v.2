@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="order.css" rel="stylesheet">
+</head>
+<body>
+    <div id="bugerButton"  onclick="toggleMenu()">
+        <img src="imgFolder/hamburgerIcon.png" height="100%" width="100%">
+    </div>  
+    <div id="focusCover"><!--Add Grey sand blur background when using the navbar-->
+        <div id="rNavBar">
+            <!--Nav Items-->
+            <div id="navItem1" class="navItem" onclick="snapTo(this)"><div class="navText"><p>Tempah</p></div></div>
+            <div id="navItem2" class="navItem" onclick="snapTo(this)"><div class="navText"><p>Galleri</p></div></div>
+            <div id="navItem3" class="navItem" onclick="snapTo(this)"><div class="navText"><p>Jadual Penempahan</p></div></div>
+        </div>
+    </div>
+    <div id="htmlHeader">
+        <h2 id="htmlHeaderText"><u>Tempahan Makmal Sistem Komputer</u></h2>
+    </div>
+    <div id="contentWrapper">
+        <div id="header" class="contentItem">
+            <div id="bodyItem1" class="displayItem">
+                <div id="titleTextHeader" class="text"><!--Title text-->
+                    <h1><u>Penempahan</u></h1>
+                </div>
+                <div id="descriptionText" class="text"><!--Description text-->
+                    <!--Saya tahu ini buan sepatutnya bagaimana galleri  berfungsi, tteapi saya dalam kesimpitan masa-->
+                    <div id="imageRow1" class="imageRow">
+                        <form>
+                            <input type="text" id="name" class="usrInput" value="" placeholder="Name"></input>
+                            <input type="text" id="email" class="usrInput" value="" placeholder="Email"></input>
+                            <input type="text" id="noTel" class="usrInput" value="" placeholder="Nombor Telefon"></input>
+                            <input type="text" id="orderStart" class="usrInput" value="" placeholder="Tarikh Permulaan Penempahan"></input>
+                            <input type="text" id="oderDuration" class="usrInput" value="" placeholder="Durasi Penempahan"></input>
+                            <div id="usrOutputContainer">
+                                <div id="costCalcContainer" class="usrOutput">
+                                    <div id="costText"><p>Kos Yang Dianggarkan</p></div>
+                                    <div id="costValue"><p id="costOutput"></p></div>
+                                </div>
+                                <div id="submitContainer" class="usrOutput">
+                                    <p style="display: block; margin-top: 5%;">Submit</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="htmlFooter">
+        <div id="htmlFooterCopyright">
+            <p>
+                <i>This is a footer</i>
+                <br>
+                <b>yada yada yada footer info, copyright info</b>
+            </p>
+        </div>
+        <div id="htmlFooterMedia">
+            <div id="insta" class="socialMedia">[Insta]</div>
+            <div id="facebook" class="socialMedia">[Faceook]</div>
+            <div id="twitter" class="socialMedia">[Twitter]</div>
+        </div>
+    </div>
+    <script src="order.js" type="text/javascript"></script>
+</body> 
+</html>

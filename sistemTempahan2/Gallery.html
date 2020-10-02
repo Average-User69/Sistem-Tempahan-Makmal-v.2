@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Gallery.css" rel="stylesheet">
+</head>
+<body>
+    <div id="bugerButton"  onclick="toggleMenu()">
+        <img src="imgFolder/hamburgerIcon.png" height="100%" width="100%">
+    </div>
+    <div id="galleryFocus" onclick="displayImg(this)">
+        <div id="imageFocus">
+        </div>
+    </div>
+    <div id="focusCover"><!--Add Grey sand blur background when using the navbar-->
+        <div id="rNavBar">
+            <!--Nav Items-->
+            <div id="navItem1" class="navItem" onclick="snapTo(this)"><div class="navText"><p>Tempah</p></div></div>
+            <div id="navItem2" class="navItem" onclick="snapTo(this)"><div class="navText"><p>Galleri</p></div></div>
+            <div id="navItem3" class="navItem" onclick="snapTo(this)"><div class="navText"><p>Jadual Penempahan</p></div></div>
+        </div>
+    </div>
+    <div id="htmlHeader">
+        <h2 id="htmlHeaderText"><u>Galleri</u></h2>
+    </div>
+    <div id="contentWrapper">
+        <div id="header" class="contentItem">
+            <div id="bodyItem1" class="displayItem">
+                <div id="titleTextHeader" class="text"><!--Title text-->
+                    <h1><u>Galleri</u></h1>
+                </div>
+                <div id="descriptionText" class="text"><!--Description text-->
+                    <!--Saya tahu ini buan sepatutnya bagaimana galleri  berfungsi, tteapi saya dalam kesimpitan masa-->
+                    <div id="imageRow1" class="imageRow">
+                        <div id="image1-1" class="image" onclick="displayImg(this)"></div>
+                        <div id="image2-1" class="image" onclick="displayImg(this)"></div>
+                        <div id="image3-1" class="image" onclick="displayImg(this)"></div>
+                    </div>
+                    <div id="imageRow1" class="imageRow">
+                        <div id="image1-2" class="image" onclick="displayImg(this)"></div>
+                        <div id="image2-2" class="image" onclick="displayImg(this)"></div>
+                        <div id="image3-2" class="image" onclick="displayImg(this)"></div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="htmlFooter">
+        <div id="htmlFooterCopyright">
+            <p>
+                <i>This is a footer</i>
+                <br>
+                <b>yada yada yada footer infp, copyright info</b>
+            </p>
+        </div>
+        <div id="htmlFooterMedia">
+            <div id="insta" class="socialMedia">[Insta]</div>
+            <div id="facebook" class="socialMedia">[Faceook]</div>
+            <div id="twitter" class="socialMedia">[Twitter]</div>
+        </div>
+    </div>
+    <script src="Gallery.js" type="text/javascript"></script>
+</body> 
+</html>

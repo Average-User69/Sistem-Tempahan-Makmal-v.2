@@ -1,0 +1,4 @@
+make a html file named (directory:[D:\Presentation sistem tempahan makmal komputer\sistemTempahan2]):
+-jadual.html
+-gallery.html
+-contact.html
