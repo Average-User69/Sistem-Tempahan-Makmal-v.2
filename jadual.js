@@ -4,9 +4,8 @@
 
 //Snap to
 function snapTo(selectedDiv){
-    var URL = "file:///D:/Presentation%20sistem%20tempahan%20makmal%20komputer/sistemTempahan2/test1.html";
-    var URL2 = "file:///D:/Presentation%20sistem%20tempahan%20makmal%20komputer/sistemTempahan2/gallery.html";
-    var URL3 = "file:///D:/Presentation%20sistem%20tempahan%20makmal%20komputer/sistemTempahan2/jadual.html";
+    var URL =  window.location.pathname;
+    var URL2 = URL.substring(0, URL.lastIndexOf("/")+1);  
     var divToSnap = "";
 
     //snapToType
@@ -15,20 +14,18 @@ function snapTo(selectedDiv){
     var div3 = document.getElementById("navItem3");
 
     if (selectedDiv == div1){
-        divToSnap = "#headerItem1";
+        divToSnap = "test1.html";
     }
     else if(selectedDiv == div2){
-        divToSnap = "#bodyItem1";
+        divToSnap = "gallery.html";
     }
     else{
-        divToSnap = "#contentContainer";
+        divToSnap = "jadual.html";
     }
-    if (selectedDiv == div3){
-        URL = URL3;
-    }
-    URL += divToSnap;
-    console.log(URL);
-    window.open(URL, "_self");
+
+    URL2 += divToSnap;
+    console.log(URL2);
+    window.open(URL2, "_self");
 }
 
 //openNewWindow (Open upon clicking the title)

@@ -4,7 +4,7 @@
 
 //Snap to
 function snapTo(selectedDiv){
-    var URL = "file:///D:/Presentation%20sistem%20tempahan%20makmal%20komputer/sistemTempahan2/test1.html" ;
+    var URL =  window.location.pathname;
     var divToSnap = "";
 
     //snapToType
@@ -16,7 +16,7 @@ function snapTo(selectedDiv){
         divToSnap = "#headerItem1";
     }
     else if(selectedDiv == div2){
-        divToSnap = "#bodyItem1         ";
+        divToSnap = "#bodyItem1";
     }
     else{
         divToSnap = "#footerItem1";
